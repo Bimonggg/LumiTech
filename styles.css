@@ -1,0 +1,228 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Gaya umum untuk body */
+body {
+    background-color: #f9fafb;
+    color: #333;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3a4a64;
+    color: white;
+    padding: 1rem 2.5rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #e4e4e4;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #f8f9fa;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 3rem;
+}
+
+header nav ul li a {
+    color: #f8f9fa;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #5fa8d3;
+}
+
+
+main {
+    padding: 5rem 3rem;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.welcome {
+    text-align: center;
+    padding: 6rem 0;
+    background-color: #5fa8d3;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.welcome h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.welcome p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: #eaeaea;
+}
+
+.welcome button {
+    padding: 1rem 3rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.welcome button:hover {
+    background-color: #444;
+}
+
+/* Featured Products Section */
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 3rem 0;
+    color: #333;
+    font-weight: 600;
+}
+
+.related-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.related-products .product {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 1.8rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.related-products .product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.related-products .product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.related-products .product img:hover {
+    transform: scale(1.05);
+}
+
+.related-products .product h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.related-products .product p {
+    color: #777;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+.related-products .product .price {
+    font-size: 1.3rem;
+    color: #5fa8d3;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.related-products .product button {
+    padding: 1rem 2.5rem;
+    background-color: #5fa8d3;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.related-products .product button:hover {
+    background-color: #4a92b1;
+}
+
+/* Footer */
+footer {
+    background-color: #3a4a64;
+    color: white;
+    padding: 3rem 0;
+    margin-top: 6rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.footer-links,
+.footer-links-en {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links a,
+.footer-links-en a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-links-en a:hover {
+    color: #fff;
+}
+.product img {
+    margin-top: 5px;  /* Menambah jarak antara gambar dengan elemen di atasnya */
+    width: 100%;  /* Menyesuaikan lebar gambar */
+    height: auto;  /* Menjaga aspek rasio gambar */
+}
